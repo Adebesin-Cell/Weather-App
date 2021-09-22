@@ -1,0 +1,37 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  height: 100vh;
+}
+
+.container {
+  @media only screen and (min-width: 1800px) {
+    padding-left: 15%;
+    padding-right: 15%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 1799px) {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  @media only screen and (max-width: 1200px) {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.u-flex {
+  flex-basis: 100%;
+}

@@ -1,0 +1,84 @@
+.header {
+  background: #343a40;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    height: initial;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 100%;
+  }
+
+  &__form {
+    flex: 0 0 40%;
+    @media only screen and (max-width: 600px) {
+      order: 3;
+      flex: 0 0 100%;
+      padding-top: 30px;
+    }
+  }
+
+  &__form-group {
+    display: flex;
+    height: 40px;
+  }
+
+  &__input {
+    display: block;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    height: 100%;
+    border-radius: 5px 0px 0px 5px;
+    flex: 0 0 85%;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    height: 100%;
+    background: #eb6f4c;
+    border-radius: 0px 5px 5px 0px;
+    flex: 0 0 15%;
+    @media only screen and (max-width: 600px) {
+      width: 15%;
+    }
+  }
+
+  &__filter {
+    flex: 0 0 15%;
+    border-radius: 5px;
+    height: 40px;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    @media only screen and (max-width: 600px) {
+      flex: 0 0 30%;
+    }
+  }
+}

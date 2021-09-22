@@ -1,0 +1,51 @@
+.section-overview {
+  background: #343a40;
+  padding: 60px 0;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  @media only screen and (max-width: 600px) {
+    height: initial;
+  }
+}
+
+.overview {
+  display: flex;
+  justify-content: space-between;
+  @media only screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
+
+  &__card {
+    @media only screen and (max-width: 600px) {
+      flex: 0 0 50%;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 15px;
+  }
+
+  &__value {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #ffffff;
+    @media only screen and (max-width: 600px) {
+      text-align: left;
+    }
+  }
+}
